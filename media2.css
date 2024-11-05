@@ -1,0 +1,47 @@
+/* small phones, tablest, large smartphones */
+
+@media (max-width: 768px) {
+    .nav {
+        height: 68px;
+        background-color: rgb(167, 163, 163);
+    }
+
+    .hero__text .hero_h1 {
+        font-size: 28px;  
+    }
+
+    .hero__section {
+        flex-direction: column;
+    }
+
+    .quality__section {
+        flex-direction: column;
+    }
+
+    .quality__img--container {
+        margin: 28px;
+    }
+
+    .steps__container .easy__row {
+        flex-direction: column;
+    }
+
+    .values__wrapper .values__row {
+        flex-direction: column;
+    }
+
+    .plan {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .testomonial__section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* 01:12:55 portfolio site */

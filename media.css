@@ -1,0 +1,278 @@
+
+  /* Responsive Breakpoints */
+  
+  /* Tablet View */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .hero__section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .services__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 480px) {
+    .nav__link-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .hero_h1 {
+      font-size: 2rem;
+    }
+  
+    .input__wrapper {
+      flex-direction: column;
+    }
+  
+    .services__wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Hamburger Icon */
+
+
+  
+  /* Navigation for Desktop */
+  .nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  #nav-menu {
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  /* Mobile Navigation (Hidden by Default) */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav {
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      width: 200px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      max-height: 0;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav__link-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .nav.open {
+      max-height: 300px;
+    }
+  }
+  
+  /*quality section*/
+
+  /* Base styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.quality__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.quality__text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.quality__img--container {
+    flex: 1;
+    max-width: 500px;
+}
+
+.quality__img {
+    width: 100%;
+    height: auto;
+}
+
+/* Tablet view (768px and below) */
+@media (max-width: 768px) {
+    .quality__section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quality__text,
+    .quality__img--container {
+        max-width: 100%;
+        padding: 10px 0;
+    }
+
+    .hero_h1 {
+        font-size: 1.8rem;
+    }
+
+    .quality__para {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .quality__btn .btn {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile view (480px and below) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .hero_h1 {
+        font-size: 1.5rem;
+    }
+
+    .quality__para {
+        font-size: 0.9rem;
+    }
+
+    .quality__btn .btn {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
+
+/*steps */
+/* Base styles */
+.steps__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.easy__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.easy__img--container {
+    flex: 1;
+    max-width: 500px;
+}
+
+.easy__img {
+    width: 100%;
+    height: auto;
+}
+
+.easy__text--column {
+    flex: 1;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.easy__header {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.easy__items {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.easy__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.item__number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6a1b9a;
+    margin-right: 15px;
+}
+
+.item__content {
+    max-width: 500px;
+}
+
+/* Tablet view (768px and below) */
+@media (max-width: 768px) {
+    .easy__row .values__wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .easy__img--container,
+    .easy__text--column {
+        max-width: 100%;
+        padding: 10px 0;
+    }
+
+    .easy__header {
+        font-size: 1.8rem;
+    }
+
+    .item__number {
+        font-size: 1.2rem;
+    }
+
+    .item__content h3 {
+        font-size: 1.1rem;
+    }
+
+    .item__description {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile view (480px and below) */
+@media (max-width: 480px) {
+    .steps__container {
+        padding: 10px;
+    }
+
+    .easy__header {
+        font-size: 1.5rem;
+    }
+
+    .item__number {
+        font-size: 1rem;
+    }
+
+    .item__content h3 {
+        font-size: 1rem;
+    }
+
+    .item__description {
+        font-size: 0.9rem;
+    }
+}
+
+
+  
