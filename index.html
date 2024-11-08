@@ -12,15 +12,14 @@
 
 <body>
     <div class="main__container">
-        <section>
-            <div class="row">
-                <header>
+        <!-- <section> -->
+            <!-- <div class="row media__row"> -->
+                <header class="top__header">
                     <div class="logo">
-                        <img src="./assets/logo.png" alt="">Treact
+                        <img src="./assets/logo.png" alt=""><p>Treact</p>
                     </div>
                     <nav>
-                        <div class="nav__container" id="nav-menu">
-
+                        <div class="nav__container nav" id="nav-menu">
                             <div class="nav__link-wrapper">
                                 <a href="#" class="nav__link">About</a>
                                 <a href="#" class="nav__link">Blog</a>
@@ -28,36 +27,11 @@
                                 <a href="#" class="nav__link">Conatact Us</a>
                                 <a href="#" class="nav__link">Login</a>
                                 <a href="#" class="nav__link signup">Sign Up</a>
-                            </div>
-                            <button class="btn__menu" onclick="openMenu()">
-                                <i class="fas fa-bars"></i>
-                            </button>
-                            <div class="menu__backdrop">
-                                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                                <ul class="menu__links">
-                                    <li class="menu__list">
-                                        <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
-                                    </li>
-                                    <li class="menu__list">
-                                        <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
-                                    </li>
-                                    <li class="menu__list">
-                                        <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
-                                    </li>
-                                </ul>
-                            </div>
-
+                            </div>                           
                         </div>
-
                     </nav>
-
-
-
                 </header>
-            </div><!--row end-->
-        </section>
+        <!-- </section> -->
         <div class="container">
             <section>
                 <div class="row">
@@ -68,7 +42,7 @@
                                 modular components with a variety of pages and components.
                             </p>
                             <div class="input__wrapper">
-                                <input type="email" placeholder="Your E-mail address"> <button class="get__started">Get
+                                <input class="email" placeholder="Your E-mail address"> <button class="get__started">Get
                                     Started</button>
                             </div>
                         </div>
@@ -187,7 +161,7 @@
                 <div class="easy__text--column">
                     <div class="easy__text--container">
                         <p class="easy__introduction purple">STEPS</p>
-                        <h2 class="easy__header">Easy to <span class="purple">Get Started.</span></h2>
+                        <h2 class="easy__header easy__header--media">Easy to <span class="purple">Get Started.</span></h2>
                         <ul class="easy__items">
                             <li class="easy__item">
                                 <span class="item__number">01</span>
@@ -261,10 +235,12 @@
                                 </div>
                                 <p class="professionalism__para">
                                     We assure you that our templates are desinged and created by professional designers.
-                                </p>
+                                </p>                                
+                            </div>
+                            <div class="learn__more">
+                                <a href="#"><button class="btn">Learn More</button></a>
                             </div>
                         </div>
-                        <a href="#"><button class="btn">Learn More</button></a>
                     </div>
                 </div>
                 <div class="values__img--column">
@@ -510,15 +486,19 @@
         <section>
             <div class="row">
                 <div class="cta__wrapper">
+                    <div class="cta__content">
                     <div class="cta__headline">
-                        <h5>Developers all over the world are happily using Treact.</h5>
+                        <h5>Developers all over the world are happily using Treact.</h5>                                                
                     </div>
+                    <div class="btn__wrapper--cta">
                     <div class="quality__btn">
                         <button class="cta__btn buy__now1">Get Started</button>
                     </div>
                     <div class="quality__btn">
                         <button class="cta__btn buy__now2">Contact Us</button>
                     </div>
+                    <!-- </div> -->
+                </div>
                 </div>
             </div>
 
