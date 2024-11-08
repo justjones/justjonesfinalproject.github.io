@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-@import url("media2.css");
+
 
 * {
     font-family: "Inter", system-ui;  
@@ -85,69 +85,6 @@ header {
 .nav__link:nth-child(5) {
     margin: 0 24px 0 48px;
 }
-
-.btn__menu {
-    background-color: transparent;
-    font-size: 40px;
-    text-align: center;
-    border: none;
-    color: #7342d6; 
-    display: none;   
-}
-
-.btn__menu, .fa-bars, .fa-times {
-    color: #6415ff;
-}
-
-.menu__backdrop {
-    position: absolute;
-    background-color: #242424;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 300ms ease;
-    opacity: 0;
-    visibility: hidden;
-
-}
-
-.menu--open .menu__backdrop {
-    visibility: visible;
-    opacity: 1;
-}
-
-.menu--open {
-    max-height: 100vh;
-    overflow-y: hidden;
-}
-
-.menu__links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.menu__list {
-    padding: 32px 0;
-}
-
-.menu__link {
-    color: #ffffff;
-}
-
-.btn__menu--close {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    padding: 8px;
-    color: #ffffff;
-}
-
 
 .signup {
     background-color: #6415FF;
@@ -380,13 +317,8 @@ QUALITY WORK
 .quality__img  {    
     width: 100%;
  }
-
- .learn__more {
-    text-align: center;    
- }
-
  .quality__text {
-    width: 50%;
+    width: 100%;
     padding: 24px;
  }
 
@@ -457,6 +389,10 @@ EASY TO GET STARTED
     line-height: 20px;
     margin-top: 16px;
     letter-spacing: 0.4px;
+}
+
+.easy__header {
+    line-height: 50px;
 }
 
 .easy__items {
@@ -675,14 +611,10 @@ PRICING
     font-weight: 500;
     color: rgb(124, 139, 161);
     font-size: 16px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; 
-    max-width: 576px;
+    text-align: center;   
     width: 100%; 
     line-height: 1.625;
+    padding: 0 32px;
 }
 
 
@@ -695,11 +627,13 @@ card
 .plans {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
 .plan {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     margin-top: 20px;
 }
@@ -811,6 +745,11 @@ hr {
     font-weight: 500;
 }
 
+.card__1 .card__middle {
+    padding-bottom: 65px;   
+     
+}
+
 .card__middle2 p {
     padding-bottom: 20px;   
     font-weight: 500;
@@ -869,8 +808,7 @@ TESTIMONIALS
     width: 100%;
 }
 .testomonial__img {
-    width: 640px;
-    height: 388px;
+    width: 100%;    
 }
 
 .stars__wrapper {
@@ -1114,13 +1052,13 @@ CTA
     align-items: center;
     justify-content: space-around;
     padding: 96px 0;
-    width: 1282px;
+    /* width: 100%; */
     height: 282px;
 }
 
 .cta__headline {
     max-width: 32rem;
-    margin-left: 150px;
+    text-align: center;    
 }
 
 .cta__headline h5 {
@@ -1129,6 +1067,11 @@ CTA
     color: #fff;
 }
 
+.btn__wrapper--cta {
+    display: flex;
+    margin-top: 8px;
+    gap: 12px;
+}
 
 .cta__btn {
     width: 175px;
@@ -1270,5 +1213,260 @@ ul.footer__lists  {
     padding: 16px;
 }
 
+/* small phones, tablest, large smartphones */
 
 
+
+@media (max-width: 768px) {
+
+    .top__header {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    
+     .logo {
+        flex-direction: column;
+        margin-bottom: 16px;
+     }
+
+     .logo p {
+        display: none;
+     }
+
+     .nav__link:nth-child(5) {
+        margin: 0;
+     }
+
+    .top__header {
+        display: inline;        
+    }
+
+    .nav__container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav__link-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero__text .hero_h1 {
+        font-size: 28px;  
+    }
+
+    .hero__img {
+        padding: 28px;
+    }
+
+    .hero__section {
+        flex-direction: column;
+    }
+
+    .input__wrapper .email::placeholder {
+        color: #fff;
+    }
+    
+    .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .services__row {
+        padding: 28px;
+    }
+
+    .quality__section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;        
+    }
+
+    .learn__more {
+        text-align: center;
+        width: 75%;    
+     }
+
+    .quality__text h1 {
+        font-size: 23px;        
+    }
+
+    .quality__img--container {
+        display: none;
+    }
+
+    .quality__btn {
+        margin: 0 auto;
+    }
+
+    .steps__container .easy__row {
+        flex-direction: column;
+    }
+
+    .text__wrapper .pricing__title{
+        font-size: 28px;
+    }
+
+   .values__introduction {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .values__principles h1 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .values__text--column {
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .values__subtitle {
+        /* margin-left: 10%; */
+        text-align: center;
+    }
+
+    .principles__column {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .learn__more .btn {
+        width: 100%;
+        padding: 8px 16px;
+    }
+
+    .learn__more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 16px;
+    }
+
+    .values__wrapper .values__row {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .values__wrapper .values__text--column {
+        width: 100%;
+    }
+
+    .values__img {
+        display: none;
+    }
+
+    .pricing__wrapper .text__wrapper {       
+        width: 100%;
+    }
+
+
+    .plan {
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;        
+    }
+
+    .card {
+        width: 100%;
+        
+    }
+
+    .testomonial__section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;                    
+    }
+
+    .faqs__wrapper {
+        padding: 16px;
+    }
+
+    .accordion__label {
+        padding: 16px;
+    }
+    .content {
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .testomonial__section .testomonial__img--container {
+        width: 75%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .cta__wrapper {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        /* width: 50%; */
+    }
+
+    .cta__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;        
+    }
+
+    .cta__headline {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .cta__headline h5 {
+        font-size: 28px;
+        text-align: center;       
+    }
+
+    .btn__wrapper--cta {
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        margin-top: 8px;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .quality__btn {
+        width: 75%;
+    }
+
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 28px;
+    }
+
+    .copyright__wrapper {
+        flex-direction: column;        
+        padding: 28px;
+    }
+
+    .social__icons {
+        padding-bottom: 200px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .cta__headline {
+        width: 75%;
+    }
+
+}
